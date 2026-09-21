@@ -6,7 +6,12 @@ Client side only. One ModuleScript with four children. No dependencies.
 
 ## Install
 
-Intall the `TileSweep` Release .rbxm then paste it into `ReplicatedStorage`. That is all.
+Two ways:
+
+- Get it from the [Creator Store](https://create.roblox.com/store/asset/116996144631492/TileSweep) and insert it from the Toolbox.
+- Download `TileSweep.rbxm` from the [latest release](https://github.com/VapexGit/TileSweep/releases/latest) and drag it into Studio.
+
+Then put `TileSweep` in `ReplicatedStorage`. That is all.
 
 ## Basic use
 
