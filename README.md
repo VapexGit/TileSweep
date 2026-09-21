@@ -6,7 +6,7 @@ Client side only. One ModuleScript with four children. No dependencies.
 
 ## Install
 
-Copy the `TileSweep` folder into `ReplicatedStorage`. That is all.
+Intall the `TileSweep` Release .rbxm then paste it into `ReplicatedStorage`. That is all.
 
 ## Basic use
 
