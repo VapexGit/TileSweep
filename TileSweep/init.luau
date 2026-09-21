@@ -2,6 +2,7 @@
 -- vapex0_ Discord
 -- September 21, 2026
 -- MIT licensed — Copyright (c) 2026 VapexGit (vapex0_)
+-- https://github.com/VapexGit/TileSweep
 
 
 --[[
@@ -43,6 +44,7 @@
 		TileSweep.Patterns.register(name, function(cell, grid, options) return n end)
 		TileSweep.Styles.register(name, function(frame, coverage, cell, options) end)
 		TileSweep.Easing.register(name, function(alpha) return n end)
+
 ]]
 
 local Config = require(script.Config)
