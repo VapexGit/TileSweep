@@ -1,0 +1,24 @@
+# Roblox place and model files
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+*.rbxl.lock
+*.rbxlx.lock
+
+# Tooling output
+/sourcemap.json
+/build/
+/Packages/
+/ServerPackages/
+/DevPackages/
+
+# Editors
+.vscode/
+.idea/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
