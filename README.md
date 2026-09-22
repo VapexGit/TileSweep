@@ -164,8 +164,6 @@ A style gets `coverage`, which runs 0 to 1 while covering and 1 to 0 while revea
 
 For a different looking tile, pass `TileTemplate` (an instance to clone) or `TileFactory` (a function that returns one), and list the properties to animate in `TransparencyProperties`, such as `{ "ImageTransparency" }` for an ImageLabel.
 
-One tip when writing a pattern. It looks good when it is either smooth everywhere or random everywhere. A smooth pattern with one sharp jump in it shows up as a tear across the screen. That is why `Spiral` looks rough, since its angle jumps from 1 back to 0 along one line, while `Random` looks fine.
-
 ## Speed
 
 The whole sweep runs on one `RenderStepped` connection. Tiles are sorted by their start time and only the ones currently moving get touched each frame, so finished and waiting tiles cost nothing. Frames are reused between sweeps and the ScreenGui is turned off while nothing is showing.
