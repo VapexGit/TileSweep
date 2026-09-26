@@ -101,7 +101,9 @@ TileSweep.new({
 
 The order the tiles arrive in.
 
-`RadialIn` `RadialOut` `Swirl` `Spiral` `EdgesToCenter` `CenterToEdges` `Rows` `RowsReverse` `Columns` `ColumnsReverse` `Diagonal` `DiagonalReverse` `Angled` `Random` `Checker` `Uniform`
+`RadialIn` `RadialOut` `DiamondIn` `DiamondOut` `Swirl` `Spiral` `EdgesToCenter` `CenterToEdges` `Rows` `RowsReverse` `Columns` `ColumnsReverse` `Diagonal` `DiagonalReverse` `Angled` `Random` `Checker` `Uniform`
+
+The three shape patterns differ only in how they measure distance from the center. `EdgesToCenter` uses the larger of x and y, so it closes as a square ring. `RadialIn` uses `sqrt(x² + y²)`, so it closes as a circle. `DiamondIn` uses `|x| + |y|`, so it closes as a diamond. Each has an outward version, and all of them follow `Origin` and `AspectCorrect`.
 
 ## Styles
 
@@ -113,10 +115,12 @@ How each tile shows up.
 
 24 built in, including `Linear`, `QuadOut`, `CubicOut`, `QuartOut`, `QuintOut`, `SineInOut`, `ExpoOut`, `CircOut`, `BackOut`, `ElasticOut` and `BounceOut`. You can also pass an `Enum.EasingStyle` or your own function.
 
-## Ten combinations worth trying
+## Combinations worth trying
 
 | Name | Settings |
 | --- | --- |
+| Diamond in | `Pattern = "DiamondIn", Style = "Pop", Easing = "QuintOut"` |
+| Diamond out | `Pattern = "DiamondOut", Style = "Scale", Easing = "QuintOut"` |
 | Radial pop | `Pattern = "RadialIn", Style = "Pop"` |
 | Spin in | `Pattern = "EdgesToCenter", Style = "Spin", Easing = "BackOut"` |
 | Diagonal wipe | `Pattern = "Diagonal", Style = "Wipe"` |

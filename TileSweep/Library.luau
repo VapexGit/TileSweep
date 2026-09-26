@@ -187,6 +187,16 @@ patterns.RadialOut = function(cell, grid, options)
 	return math.sqrt(x * x + y * y)
 end
 
+patterns.DiamondIn = function(cell, grid, options)
+	local x, y = offsetFromOrigin(cell, grid, options)
+	return -(math.abs(x) + math.abs(y))
+end
+
+patterns.DiamondOut = function(cell, grid, options)
+	local x, y = offsetFromOrigin(cell, grid, options)
+	return math.abs(x) + math.abs(y)
+end
+
 patterns.Rows = function(cell)
 	return cell.Y
 end
